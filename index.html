@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth-section">
+    <h2>Login</h2>
+    <input id="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p>New user? <a href="#" onclick="showSignup()">Sign up</a></p>
+  </div>
+
+  <div id="signup-section" style="display: none;">
+    <h2>Sign Up</h2>
+    <input id="signup-email" placeholder="Email" />
+    <input id="signup-password" type="password" placeholder="Password" />
+    <button onclick="signup()">Sign Up</button>
+    <p>Have an account? <a href="#" onclick="showLogin()">Login</a></p>
+  </div>
+
+  <div id="notes-section" style="display: none;">
+    <h2>My Notes</h2>
+    <input id="noteInput" placeholder="Write a note..." />
+    <button onclick="addNote()">Add</button>
+    <ul id="notesList"></ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
